@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TPV Moda & Ropa • Dinamita Apps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="drawer" class="drawer" aria-hidden="true">
+    <div class="backdrop" id="backdrop"></div>
+    <aside class="panel">
+      <div class="brand">
+        <img id="brandLogo" class="brand-logo" alt="Logo" />
+        <div>
+          <div class="brand-title" id="brandName">Tu Tienda</div>
+          <div class="brand-sub">TPV Moda & Ropa</div>
+        </div>
+      </div>
+      <nav class="menu" id="menu">
+        <a data-route="inventario">👗 Inventario</a>
+        <a data-route="ventas">🛍️ Ventas</a>
+        <a data-route="clientes">👥 Clientes</a>
+        <a data-route="reportes">📊 Reportes</a>
+        <a data-route="ticket">🧾 Ticket</a>
+        <a data-route="config">⚙️ Configuración</a>
+      </nav>
+      <div class="footer-made">Diseñado por <strong>Dinamita Apps</strong></div>
+    </aside>
+  </div>
+
+  <header class="topbar">
+    <button class="hamburger" id="btnMenu"><div class="bars"><span></span><span></span><span></span></div></button>
+    <div><div class="title" id="title">Inventario</div><div class="subtitle" id="subtitle">Accesorios & Ropa</div></div>
+    <div class="spacer"></div>
+    <div class="search-wrap" id="searchWrap">
+      <input id="search" class="search" type="search" placeholder="Buscar..." />
+    </div>
+  </header>
+
+  <main class="content"><section class="list" id="list"></section></main>
+
+  <dialog id="modal"><form method="dialog"><h3 id="modalTitle"></h3><div id="modalBody"></div><menu><button id="btnCancel">Cancelar</button><button id="btnOk" value="ok" class="primary">Guardar</button></menu></form></dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
